@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8424bd7c-bba5-41db-b2ed-e7c3b918ab4a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateUser Test case" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8424bd7c-bba5-41db-b2ed-e7c3b918ab4afileName">CreateUser-Test-case</con:setting></con:settings><con:testStep type="restrequest" name="createuser" id="1dffc31a-2b8e-436a-ad29-55bd744341f3"><con:settings/><con:config service="https://www.test-insurance.com" resourcePath="/api/v1/user" methodName="CreateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createuser" id="28015ecb-e8e3-46d4-88c3-62d74c698026" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.test-insurance.com</con:endpoint><con:request>{
+  "primaryPerson": {
+    "email": "faramz@baltimore.com",
+    "title": "Mr.",
+    "firstName": "faramarz",
+    "lastName": "ferdaws",
+    "gender": "Male",
+    "maritalStatus": "single",
+    "employmentStatus": "unemployeed",
+    "dateOfBirth": "1988-01-25",
+    "languagePref": "en"
+  },
+  "primaryPersonMailingAddress": {
+    "addressType": "USA",
+    "addressLine1": "Maryland",
+    "city": "silver spring",
+    "state": "MD",
+    "postalCode": "21229",
+    "countryCode": "1"
+  },
+  "primaryPersonPhone": {
+    "phoneNumber": "410-253-6589",
+    "phoneExtension": "10",
+    "phoneTime": "day",
+    "phoneType": "mobile"
+  }
+}</con:request><con:originalUri>https://www.test-insurance.com/api/v1/user</con:originalUri><con:credentials><con:selectedAuthProfile>Berear</con:selectedAuthProfile><con:authType>OAuth 2.0</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

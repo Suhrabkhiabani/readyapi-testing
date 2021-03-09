@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a7ebcef1-0d19-43d2-853e-b8b98ce714f6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Add Secondary User" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a7ebcef1-0d19-43d2-853e-b8b98ce714f6fileName">Add-Secondary-User</con:setting></con:settings><con:testStep type="restrequest" name="REST Request" id="47d50677-45ff-47c3-b599-4c7e0c37fe8a"><con:settings/><con:config service="https://www.test-insurance.com" resourcePath="/api/v1/user" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="6b56725b-458f-4468-bb02-8f939ec956f5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.test-insurance.com</con:endpoint><con:request>{
+  "primaryPersonId": "138",
+  "secondaryPerson": {
+    "username": "kiomars",
+    "email": "kioma@gmail.com",
+    "title": "Mr.",
+    "firstName": "kiomars",
+    "lastName": "ferdaws",
+    "gender": "male",
+    "maritalStatus": "single",
+    "employmentStatus": "unemployeed",
+    "dateOfBirth": "1995-12-14",
+    "languagePref": "English",
+    "password": "1234"
+  },
+  "secondaryPersonMailingAddress": {
+    "addressType": "USA",
+    "addressLine1": "123 Nowhere st",
+    "city": "silver spring",
+    "state": "MD",
+    "postalCode": "21229",
+    "countryCode": "+1"
+  }
+}</con:request><con:originalUri>https://www.test-insurance.com/api/v1/secondary-user</con:originalUri><con:credentials><con:selectedAuthProfile>Berear</con:selectedAuthProfile><con:authType>OAuth 2.0</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
